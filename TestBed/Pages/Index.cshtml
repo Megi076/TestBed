@@ -1,5 +1,8 @@
 ﻿@page
+@using Microsoft.Extensions.Localization
 @model TestBed.Pages.IndexModel
+@inject IStringLocalizer<Index> Localizer
+
 @{
     ViewData["Title"] = "Taxi Rides";
 }
@@ -28,14 +31,14 @@
     <table class="table table-bordered table-striped">
         <thead>
             <tr>
-                <th>Medallion</th>
-                <th>HashLicense</th>
-                <th>Pickup Time</th>
-                <th>DropOff Time</th>
-                <th>Duration</th>
-                <th>Distance</th>
-                <th>Fare</th>
-                <th>Total</th>
+                <th>@Localizer["Medallion"]</th>
+                <th>@Localizer["HashLicense"]</th>
+                <th>@Localizer["PickupTime"]</th>
+                <th>@Localizer["DropOffTime"]</th>
+                <th>@Localizer["Duration"]</th>
+                <th>@Localizer["Distance"]</th>
+                <th>@Localizer["Fare"]</th>
+                <th>@Localizer["Total"]</th>
             </tr>
         </thead>
         <tbody>
@@ -57,5 +60,6 @@
 }
 else
 {
-    <p>No data available.</p>
+    <p><localize>No data available.</localize></p>
 }
+

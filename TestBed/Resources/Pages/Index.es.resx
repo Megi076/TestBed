@@ -1,33 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <root>
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <xsd:element name="root" msdata:IsDataSet="true">
-            
-        </xsd:element>
-    </xsd:schema>
-    <resheader name="resmimetype">
-        <value>text/microsoft-resx</value>
-    </resheader>
-    <resheader name="version">
-        <value>1.3</value>
-    </resheader>
-    <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <data name="Welcome" xml:space="preserve">
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Welcome" xml:space="preserve">
         <value>Hola</value>
     </data>
-    <data name="Learn" xml:space="preserve">
+	<data name="Learn" xml:space="preserve">
         <value>Aprenda a &lt;a href="https://docs.microsoft.com/aspnet/core"&gt;construir aplicaciones web con ASP.NET Core&lt;/a&gt;.</value>
     </data>
-    <data name="IndexTitle" xml:space="preserve">
+	<data name="IndexTitle" xml:space="preserve">
         <value>Página de inicio</value>
     </data>
-    <data name="Submit" xml:space="preserve">
+	<data name="Submit" xml:space="preserve">
         <value>Enviar</value>
+    </data>
+	<data name="Medallion" xml:space="preserve">
+        <value>Medallón</value>
+    </data>
+	<data name="HashLicense" xml:space="preserve">
+        <value>Licencia Hash</value>
+    </data>
+	<data name="PickupTime" xml:space="preserve">
+        <value>Hora de recogida</value>
+    </data>
+	<data name="DropOffTime" xml:space="preserve">
+        <value>Hora de bajada</value>
+    </data>
+	<data name="Duration" xml:space="preserve">
+        <value>Duración</value>
+    </data>
+	<data name="Distance" xml:space="preserve">
+        <value>Distancia</value>
+    </data>
+	<data name="Fare" xml:space="preserve">
+        <value>Tarifa</value>
+    </data>
+	<data name="Total" xml:space="preserve">
+        <value>Total</value>
+    </data>
+	<data name="NoDataAvailable" xml:space="preserve">
+        <value>No hay datos disponibles</value>
     </data>
 </root>
