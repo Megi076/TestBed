@@ -1,0 +1,61 @@
+﻿@page
+@model TestBed.Pages.IndexModel
+@{
+    ViewData["Title"] = "Taxi Rides";
+}
+
+<div class="text-center">
+    <h1 class="display-4">
+        <localize>Welcome</localize>
+    </h1>
+    <p>
+        <localize html="true">Learn</localize>
+    </p>
+
+    <form method="get" asp-page="Index">
+        <select class="form-select form-select-lg mb-3"
+                asp-for="Culture"
+                asp-items="Model.Cultures">
+        </select>
+        <button localize class="btn btn-primary" type="submit">
+            <localize>Submit</localize>
+        </button>
+    </form>
+</div>
+
+@if (Model.TaxiRides2.Any())
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Medallion</th>
+                <th>HashLicense</th>
+                <th>Pickup Time</th>
+                <th>DropOff Time</th>
+                <th>Duration</th>
+                <th>Distance</th>
+                <th>Fare</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ride in Model.TaxiRides2)
+            {
+                <tr>
+                    <td>@ride.medallion</td>
+                    <td>@ride.hashLicense</td>
+                    <td>@ride.pickupTime</td>
+                    <td>@ride.dropOffTime</td>
+                    <td>@ride.duration</td>
+                    <td>@ride.distance</td>
+                    <td>@ride.fareAmount</td>
+                    <td>@ride.totalAmount</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No data available.</p>
+}
